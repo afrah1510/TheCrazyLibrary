@@ -1,38 +1,155 @@
 .App {
   text-align: center;
+  font-size: 150%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  background-color: thistle;
+  height: 150px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  float: right;
+}
+
+.button-container button {
+  font-size: 110%;
+  margin-right: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 10px;
+}
+
+.logo {
+  color: purple;
+  font-size: 1.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  margin-right: 10px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 10px;
+}
+
+a {
+  color: purple;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.cart-btn {
+  background-color: midnightblue;
   color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.signin-btn {
+  background-color: midnightblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-btn {
+  background-color: midnightblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.hero {
+  background-image: url('background.jpg');
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  text-shadow: 1px 1px black;
+}
+  
+.book-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2rem;
+  margin: 2rem;
+}
+  
+.book {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+}
+  
+.book img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+  
+.book-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+  
+.book-author {
+  color: mediumvioletred;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+  
+.book-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #c43b68;
+  margin-bottom: 1rem;
+}
+  
+.book-btn {
+  background-color: #c43b68;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+  
+.book-btn:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: thistle;
+  color: purple;
+  height: 40px;
 }
